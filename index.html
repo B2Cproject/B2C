@@ -3,27 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
     <title>ImageStock</title>
 </head>
 
 <body>
-    <nav>
-    </nav>
-    <header>
-
-    </header>
-    <footer>
-        <div class="con">contect</div>
-        <div id="con" class="nav">
-            <ul>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#">
+            ImageStock
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Concept</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Category</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Sky</a>
+                            <a class="dropdown-item" href="#">Road</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="KeyWord">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
         </div>
+    </nav>
+
+    <footer>
         <div>Ⓒ 2022</div>
         <div>CYCU-IM 資管二乙</div>
     </footer>
-
+    <script src="Asset/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
