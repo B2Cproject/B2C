@@ -13,7 +13,7 @@
 
 <body class="d-flex flex-column h-100">
 
-    <header class="navbar navbar-expand-lg navbar-light bg-light flex-md-nowrap p-0 shadow">
+    <header class="navbar navbar-expand-lg navbar-light bg-light flex-md-nowrap p-3 shadow">
         <a class="navbar-brand mx-auto h1" href="index.html">
             ImageStock</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
@@ -29,44 +29,49 @@
         </div>
     </header>
 
-    <main class="container-fluid">
+    <main class="container-fluid my-md-4">
         <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light collapse ">
-                <div class="position-sticky pt-3">
-                    <ul class="nav nav-pills flex-column mb-auto">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link active" data-bs-toggle="pill">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#information" class="nav-link link" data-bs-toggle="pill">
-                                Information
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#orders" class="nav-link link" data-bs-toggle="pill">
-                                Orders
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#products" class="nav-link link" data-bs-toggle="pill">
-                                Products
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#customers" class="nav-link link" data-bs-toggle="pill">
-                                Customers comment
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <aside class="col-md-3">
+                <nav id="sidebarMenu" class="col-lg d-md-block bg-light sidebar collapse shadow">
+                    <div class="position-sticky pt-3 ">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link active" data-bs-toggle="pill">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#information" class="nav-link link" data-bs-toggle="pill">
+                                    Information
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#orders" class="nav-link link" data-bs-toggle="pill">
+                                    Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#products" class="nav-link link" data-bs-toggle="pill">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#customers" class="nav-link link" data-bs-toggle="pill">
+                                    Comment
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
             <div class="tab-content col-md-9">
                 <div class="tab-pane container active" id="home">
-                    home</div>
+                    <h1 class="m-3">Home</h1>
+
+                </div>
                 <div class="tab-pane container fade" id="information">
-                    information<form class="card-body row g-3 mx-auto">
+                    <h1 class="m-3">Information</h1>
+                    <form class="card-body row g-3 mx-auto">
                         <div class="form-floating col-md-12">
                             <input type="name" class="form-control" id="name" placeholder="name">
                             <label for="name">Name</label></div>
@@ -77,9 +82,9 @@
                             <input type="password" class="form-control" id="password" placeholder="Password">
                             <label for="password">NewPassword</label></div>
                         <div class="form-floating col-md-12">
-                            <input type="text" class="form-control" id="addresss" placeholder="Password">
-                            <label for="addresss">Addresss</label></div>
-                        <div class="form-floating row g-3 mx-auto">
+                            <input type="text" class="form-control" id="address" placeholder="Address">
+                            <label for="address">Addresss</label></div>
+                        <div class="form-floating col-md-12 row g-3">
                             <span>Birthday</span>
                             <div class="form-floating col-md-4">
                                 <select aria-label="Month" name="birthday_month" id="month" title="Month"
@@ -134,7 +139,8 @@
                                 </select>
                                 <label for="birthday_month">day</label></div>
                             <div class="form-floating col-md-4">
-                                <select aria-label="Year" name="birthday_year" id="year" title="Year" class="form-select">
+                                <select aria-label="Year" name="birthday_year" id="year" title="Year"
+                                    class="form-select">
                                     <option value="2022" selected="1">2022</option>
                                     <option value="2021">2021</option>
                                     <option value="2020">2020</option>
@@ -258,15 +264,15 @@
                         </div>
                         <button class="w-100 btn btn-lg " style="background:#42b72a ;color:white" type="submit">
                             confirm</button>
-                        <div class="text-muted">or</div>
-                        <a class="btn btn-outline-primary" href="signin.html">Login An Existed Account</a>
-                    </form></div>
+                    </form>
+                </div>
                 <div class="tab-pane container fade" id="orders">
-                    orders</div>
+                    <h1 class="m-3">Order</h1>
+                </div>
                 <div class="tab-pane container fade" id="products">
-                    orders</div>
+                    <h1 class="m-3">Products</h1></div>
                 <div class="tab-pane container fade" id="customers">
-                    orders</div>
+                    <h1 class="m-3">Comment</h1></div>
             </div>
         </div>
     </main>
