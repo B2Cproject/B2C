@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Sign Up</title>
     <style>
         .btn-lg {
@@ -65,24 +66,25 @@
             <div class="row card row shadow text-center m-auto">
                 <h1 class="card-title m-auto fw-lighter">Create a new account</h1>
                 <h6 class="card-subtitle m-auto fw-lighter">For the ImageStock</h6>
-                <form class="card-body row g-3 mx-auto">
+                <form class="card-body row g-3 mx-auto" name="register" action="register.jsp" method="POST">
                     <div class="form-floating col-md-12">
-                        <input type="name" class="form-control" id="name" placeholder="name">
+                        <input name="name" type="name" class="form-control" id="name" placeholder="name">
                         <label for="name">Name</label></div>
                     <div class="form-floating col-md-6">
-                        <input type="email" class="form-control" id="account" placeholder="name@example.com">
+                        <input name="email" type="email" class="form-control" id="account"
+                            placeholder="name@example.com">
                         <label for="account">Email address</label></div>
                     <div class="form-floating col-md-6">
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input name="password" type="password" class="form-control" id="password"
+                            placeholder="Password">
                         <label for="password">NewPassword</label></div>
                     <div class="form-floating col-md-12">
-                        <input type="text" class="form-control" id="address" placeholder="Address">
+                        <input name="address" type="text" class="form-control" id="address" placeholder="Address">
                         <label for="address">Address</label></div>
                     <div class="form-floating row g-3 mx-auto">
                         <span>Birthday</span>
                         <div class="form-floating col-md-4">
-                            <select aria-label="Month" name="birthday_month" id="month" title="Month"
-                                class="form-select">
+                            <select aria-label="Month" name="month" id="month" title="Month" class="form-select">
                                 <option value="1">Jan</option>
                                 <option value="2">Feb</option>
                                 <option value="3">Mar</option>
@@ -96,9 +98,9 @@
                                 <option value="11">Nov</option>
                                 <option value="12">Dec</option>
                             </select>
-                            <label for="birthday_month">month</label></div>
+                            <label for="month">month</label></div>
                         <div class="form-floating col-md-4">
-                            <select aria-label="Day" name="birthday_day" id="day" title="Day" class="form-select">
+                            <select aria-label="Day" name="day" id="day" title="Day" class="form-select">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -131,9 +133,9 @@
                                 <option value="30">30</option>
                                 <option value="31">31</option>
                             </select>
-                            <label for="birthday_month">day</label></div>
+                            <label for="birthday_day">day</label></div>
                         <div class="form-floating col-md-4">
-                            <select aria-label="Year" name="birthday_year" id="year" title="Year" class="form-select">
+                            <select aria-label="Year" name="year" id="year" title="Year" class="form-select">
                                 <option value="2022" selected="1">2022</option>
                                 <option value="2021">2021</option>
                                 <option value="2020">2020</option>
@@ -253,7 +255,7 @@
                                 <option value="1906">1906</option>
                                 <option value="1905">1905</option>
                             </select>
-                            <label for="birthday_month">year</label></div>
+                            <label for="year">year</label></div>
                     </div>
                     <button class="w-100 btn btn-lg " type="submit">Sign
                         Up</button>
@@ -273,7 +275,12 @@
         </div>
     </footer>
 
-    <script src="Asset/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
 </body>
 
 </html>
