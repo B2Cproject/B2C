@@ -1,0 +1,68 @@
+.container{
+    height: 500px;
+}
+
+.sec-container{
+    padding: 50px 0;
+    max-width: 1000px;
+    display:flex; /*可隨縮放改變排版比例*/
+    flex-wrap: wrap; /*item內物件換行*/
+    justify-content:center; /*調整置中*/
+}
+
+img{
+    object-fit: cover; /*剪裁以適應圖片大小*/
+}
+
+.about{
+    margin:10px;
+    padding:22px;
+    max-width:30%;
+    box-sizing:border-box;
+}
+
+.about img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.name{
+    padding:12px;
+    font-weight:bold;
+    font-size:30px;
+    text-align: center;
+}
+
+.contant{
+    font-size: 18px;
+    text-align: center;
+}
+
+.FB .IG .MAIL a{
+    text-align: center;
+    text-decoration: none; /*無底線*/
+    width: 55px;
+}
+
+.FB a img{
+    margin: 3px;
+    width:50px;
+    height: 50px;
+}
+
+.IG a img{
+    margin: 3px;
+    width:30px;
+    height: 30px;
+}
+
+.MAIL a img{
+    width:40px;
+    height: 40px;
+}
+
+.social{
+    margin: 10px;
+}
+
