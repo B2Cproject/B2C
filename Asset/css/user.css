@@ -31,3 +31,8 @@
   top: .75rem;
   right: 1rem;
 }
+
+.btn-lg {
+  background: #42b72a;
+  color: white;
+}
