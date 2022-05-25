@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="Asset/css/user.css">
-    <title>user</title>
+    <title>User</title>
+    <style>
+        .btn-lg {
+            background: #42b72a;
+            color: white;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -52,7 +58,7 @@
                             </li>
                             <li>
                                 <a href="#products" class="nav-link link" data-bs-toggle="pill">
-                                    Products
+                                    Cart
                                 </a>
                             </li>
                             <li>
@@ -67,7 +73,64 @@
             <div class="tab-content col-md-9">
                 <div class="tab-pane container active" id="home">
                     <h1 class="m-3">Home</h1>
-
+                    <h4 class="m-3">Information</h4>
+                    <table class="table table-light table-bordered table-hover">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Name</th>
+                                <td colspan="3">Larry</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td colspan="3">larry@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Address</th>
+                                <td colspan="3">Hsinchu city</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Birthday</th>
+                                <td>Dec</td>
+                                <td>09</td>
+                                <td>1990</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="m-3">Last Order</h4>
+                    <table class="table table-light table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ProductName</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Sky</td>
+                                <td>$100</td>
+                                <td>@Ken</td>
+                                 <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>$100</td>
+                                <td>@Ken</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>the Bird</td>
+                                <td>$100</td>
+                                <td>@Ken</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="tab-pane container fade" id="information">
                     <h1 class="m-3">Information</h1>
@@ -262,17 +325,123 @@
                                 </select>
                                 <label for="birthday_month">year</label></div>
                         </div>
-                        <button class="w-100 btn btn-lg " style="background:#42b72a ;color:white" type="submit">
+                        <button class="w-100 btn btn-lg " type="submit">
                             confirm</button>
                     </form>
                 </div>
                 <div class="tab-pane container fade" id="orders">
                     <h1 class="m-3">Order</h1>
+                    <table class="table table-light table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ProductName</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Sky</td>
+                                <td>$100</td>
+                                <td>@Ken</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>$100</td>
+                                <td>@fat</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>the Bird</td>
+                                <td>$100</td>
+                                <td>@Lan</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="tab-pane container fade" id="products">
-                    <h1 class="m-3">Products</h1></div>
+                    <h1 class="m-3">Cart</h1>
+                    <table class="table table-light table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ProductName</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Inventory</th>
+                                <th scope="col">Like</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Sky</td>
+                                <td>$100</td>
+                                <td>@Ken</td>
+                                <td>1</td>
+                                <td><button type="submit" class="btn btn-light"><i class="fa-solid fa-heart-circle-minus"></i></button><td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>$100</td>
+                                <td>@fat</td>
+                                <td>1</td>
+                                <td><button type="submit" class="btn btn-light"><i class="fa-solid fa-heart-circle-minus"></i></button><td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>the Bird</td>
+                                <td>$100</td>
+                                <td>@Lan</td>
+                                <td>1</td>
+                                <td><button type="submit" class="btn btn-light"><i class="fa-solid fa-heart-circle-minus"></i></button><td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div class="tab-pane container fade" id="customers">
-                    <h1 class="m-3">Comment</h1></div>
+                    <h1 class="m-3">Comment</h1>
+                    <table class="table table-light table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ProductName</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Author</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Sky</td>
+                                <td>$100</td>
+                                <td>@Ken</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Your Comment</th>
+                                <td colspan="3">Cool!</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>the Bird</td>
+                                <td>$100</td>
+                                <td>@Lan</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Your Comment</th>
+                                <td colspan="3">Cool!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </main>
