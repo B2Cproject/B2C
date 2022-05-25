@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
     <title>Sign Up</title>
+    <style>
+        .btn-lg {
+            background: #42b72a;
+            color: white;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -16,7 +22,7 @@
             <a class="navbar-brand mb-0 h1" href="index.html">
                 ImageStock
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+            <button class="navbar-toggler" aria-label="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navContent">
@@ -34,10 +40,12 @@
                             <a class="dropdown-item" href="road.html">Road</a>
                         </div>
                     </li>
-                    <form class="d-flex">
-                        <input type="search" class="form-control me-2" placeholder="KeyWord">
-                        <button class="btn btn-outline-secondary" type="submit">Search</button>
-                    </form>
+                    <li>
+                        <form class="d-flex">
+                            <input type="search" class="form-control me-2" placeholder="KeyWord">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                    </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -50,8 +58,8 @@
             </div>
         </div>
     </nav>
-    
-    <main class="container" style="padding-top:60px;">
+
+    <main class="container pt-lg-5">
         <div class="mx-auto">
             <div class="row display-5 fw-normal p-3">ImageStock</div>
             <div class="row card row shadow text-center m-auto">
@@ -247,7 +255,7 @@
                             </select>
                             <label for="birthday_month">year</label></div>
                     </div>
-                    <button class="w-100 btn btn-lg " style="background:#42b72a ;color:white" type="submit">Sign
+                    <button class="w-100 btn btn-lg " type="submit">Sign
                         Up</button>
                     <div class="text-muted">or</div>
                     <a class="btn btn-outline-primary" href="signin.html">Login An Existed Account</a>
