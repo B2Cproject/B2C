@@ -1,25 +1,5 @@
-.container{
-    max-height: 700px;
-    max-width: 2500px;
-}
-
-.sec-container{
-    padding: 50px 0;
-    max-width: 2000px;
-    display:flex; /*可隨縮放改變排版比例*/
-    flex-wrap: wrap; /*item內物件換行*/
-    justify-content:center; /*調整置中*/
-}
-
 img{
     object-fit: cover; /*剪裁以適應圖片大小*/
-}
-
-.about{
-    margin:10px;
-    padding:22px;
-    max-width:30%;
-    box-sizing:border-box;
 }
 
 .about img{
@@ -35,16 +15,7 @@ img{
     text-align: center;
 }
 
-.contant{
-    font-size: 18px;
-    text-align: center;
-}
-a{
-    text-decoration: none; /*無底線*/
-}
-
 .social i{
-    margin: 3px;
     padding: 10px;
     font-size: 45px;
     color: lightgray;
