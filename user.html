@@ -52,12 +52,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#products" class="nav-link link" data-bs-toggle="pill">
+                                <a href="#cart" class="nav-link link" data-bs-toggle="pill">
                                     Cart
                                 </a>
                             </li>
                             <li>
-                                <a href="#customers" class="nav-link link" data-bs-toggle="pill">
+                                <a href="#comment" class="nav-link link" data-bs-toggle="pill">
                                     Comment
                                 </a>
                             </li>
@@ -65,6 +65,7 @@
                     </div>
                 </nav>
             </aside>
+
             <div class="tab-content col-md-9">
                 <div class="tab-pane container active" id="home">
                     <h1 class="m-3">Home</h1>
@@ -326,6 +327,65 @@
                 </div>
                 <div class="tab-pane container fade" id="orders">
                     <h1 class="m-3">Order</h1>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Order history</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Order ID</th>
+                                                    <th>Date</th>
+                                                    <th>Total</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>#72347</td>
+                                                    <td>12/12/2018</td>
+                                                    <td>$1,500</td>
+                                                    <td>
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#72347</td>
+                                                    <td>12/12/2018</td>
+                                                    <td>$1,500</td>
+                                                    <td>
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#72347</td>
+                                                    <td>12/12/2018</td>
+                                                    <td>$1,500</td>
+                                                    <td>
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm">View</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <table class="table table-light table-hover">
                         <thead>
                             <tr>
@@ -361,7 +421,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="tab-pane container fade" id="products">
+                <div class="tab-pane container fade" id="cart">
                     <h1 class="m-3">Cart</h1>
                     <table class="table table-light table-hover">
                         <thead>
@@ -408,40 +468,61 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="tab-pane container fade" id="customers">
+                <div class="tab-pane container fade" id="comment">
                     <h1 class="m-3">Comment</h1>
-                    <table class="table table-light table-bordered table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">ProductName</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Author</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Sky</td>
-                                <td>$100</td>
-                                <td>@Ken</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Your Comment</th>
-                                <td colspan="3">Cool!</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>the Bird</td>
-                                <td>$100</td>
-                                <td>@Lan</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Your Comment</th>
-                                <td colspan="3">Cool!</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <!-- Account comment -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Account comment</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Comment</th>
+                                            <th>Date</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Voluptates,
+                                                quisquam.</td>
+                                            <td>12/12/2018</td>
+                                            <td>
+                                                <a href="#" class="btn btn-primary btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Voluptates,
+                                                quisquam.</td>
+                                            <td>12/12/2018</td>
+                                            <td>
+                                                <a href="#" class="btn btn-primary btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Voluptates,
+                                                quisquam.</td>
+                                            <td>12/12/2018</td>
+                                            <td>
+                                                <a href="#" class="btn btn-primary btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Account comment -->
                 </div>
             </div>
         </div>
@@ -457,10 +538,10 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
 
