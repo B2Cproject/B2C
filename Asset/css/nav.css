@@ -3,7 +3,7 @@ nav {
     padding: 0 auto;
     margin: 0 auto;
 }
-nav a {
+a {
     white-space:nowrap;
     display: inline-block;
     color: inherit;
@@ -69,4 +69,39 @@ nav a:hover {
 }
 .mark{
     font: bold 24px Arial;
+}
+/* main */
+main{
+    background-color: #f1f1f1;
+}
+/* ad */
+.container {
+    display: flex;
+    justify-content: center;
+}
+.ad{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.ad img1
+{
+    height: 700px;
+    object-fit: cover;
+}
+.ad img2
+{
+    height: 700px;
+    object-fit: cover;
+}
+
+.between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img
+{
+    object-fit: contain;
 }
