@@ -27,3 +27,31 @@ img{
     text-decoration: none;
     color: black;
 }
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.footer{
+    background-color: black;
+    height: 100px; /*footer height*/
+}
+
+.wrapper{
+    min-height: calc(100% - 100px); /*- footer height*/
+}
+
+.space{
+    padding: 40px; /*令ImageStock不貼齊頂端*/
+    color: white;
+}
+
+.space a{
+    color: white;
+    font-weight: bold;
+}
+
+.footer-float{
+    height: 30px;
+}
