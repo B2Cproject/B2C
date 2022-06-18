@@ -1,0 +1,47 @@
+.concept-card{
+    display: block;
+    justify-content: center;
+    height: 400px;
+    width: auto;
+    background-color: aquamarine;
+    padding: 20px 90px 20px 50px;
+}
+
+.concept-card img{
+    width: 300px;
+    height: auto;
+    margin: 0 30px 5px 30px;
+    display: block;
+    float: left;
+    position: relative;
+    float:left;
+}
+
+.c-card-content{
+    width: 200px;
+    height: 350px;
+    overflow: auto;
+    padding: 20px 5px 5px 20px;
+    margin: 20px;
+    border: 1px solid black;
+    position: relative;
+    float:left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.c-photographer{
+    font-weight: bold;
+}
+
+.con-button{
+    border: 0px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: black;
+    color: white;
+    display: inline;
+
+}
