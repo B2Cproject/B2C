@@ -147,16 +147,51 @@ html, body{
 }
 
 .photographer{
-    padding-left: 10px;
+    padding: 20px;
     font-family:monospace;
     font-size: 110%;
     border: 1px black solid;
-    width: 75%;
-    margin-left: 30%;
+    width: 100%;
+    margin-left: -12px;
 }
 
 .productex-description{
     padding-left: 10px;
     font-family:monospace;
     font-size: 110%;
+}
+
+.pex-button{
+    border: 0px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: black;
+    color: white;
+    display: inline;
+}
+
+.pex-com{
+    margin: 40px;
+    display: block;
+}
+
+.media{
+    border: 1px black dashed;
+    width: auto;
+    display: flex;
+    margin: 20px;
+}
+
+.media img{
+    padding: 10px;
+}
+
+.hamster{
+    width: 275px;
+}
+
+.wrapper{
+    display: block;
+    width: 35%;
+    padding-left: 40%;
 }
