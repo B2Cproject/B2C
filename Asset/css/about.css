@@ -1,0 +1,53 @@
+/*about us*/
+.container{
+    display: flex;
+    justify-content: center; 
+}
+
+.person{
+    box-sizing: border-box;
+    display: flex; /*照片位置調整*/
+    flex-direction: column; /*卡片位置調整 上到下*/
+    justify-content: center;
+    align-items: center; /*照片調整*/
+    width: 20%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(110deg, black, white);
+    box-shadow: 0 0 20px 1px Gray;
+    float: left;
+    margin: 30px;
+}
+
+
+.personal-pic{
+    overflow: hidden;
+    padding: 10px;
+    margin: -10;
+}
+
+
+.person-name{
+    text-align: center;
+    font-family:monospace;
+    font-weight: bold;
+    color: white;
+    line-height: 3;
+    font-size: 25px;
+}
+
+.contant{
+    color: white;
+    font-family:monospace;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    color: white;
+    font-size: 250%;
+    padding: 10px;
+}
