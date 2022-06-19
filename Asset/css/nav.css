@@ -2,6 +2,7 @@ nav {
     display: flex;
     padding: 0 auto;
     margin: 0 auto;
+    border-bottom: 1px solid black;
 }
 
 a {
