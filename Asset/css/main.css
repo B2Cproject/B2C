@@ -62,10 +62,11 @@ html, body{
     height: 30px;
 }
 
-.font-mono{
-    font-family:monospace;
-}
 
 .text-center{
     text-align: center;
+}
+
+*{
+    font-family:monospace;
 }
