@@ -15,189 +15,124 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav class="nav">
-            <div class="nav-ul">
-                <ul class="flex-ul">
-                    <li> <a class="mark" href="index.html">
-                            ImageStock
-                        </a></li>
-                    <li>
-                        <a href="index.html">Home</a></li>
-                    <li>
-                        <a href="about.html">About</a></li>
-                    <li>
-                        <a href="concept.html">Concept</a></li>
-                    <li>
-                        <a href="product.html">Product</a></li>
-                    <li class="dropdown">
-                        <a href="#">Category</a>
-                        <div class="dropdown-ul">
-                            <a href="Category/sky.html">Sky</a>
-                            <a href="Category/road.html">Road</a>
-                            <a href="Category/flower.html">Flower</a>
-                            <a href="Category/river.html">River</a>
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <form>
-                            <input type="search" placeholder="KeyWord">
-                            <button type="submit">Search</button>
-                        </form>
-                    </li>
-                </ul>
-                <ul class="flex-rul">
-                    <li>
-                        <a href="cart.html">
-                            <i class="fas fa-shopping-cart"></i>
-                            <small>3</small>
-                        </a>
-                    </li>
-                    <li>
+    <nav class="nav">
+        <div class="nav-ul">
+            <ul class="flex-ul">
+                <li> <a class="mark" href="index.html">
+                        ImageStock
+                    </a></li>
+                <li>
+                    <a href="index.html">Home</a></li>
+                <li>
+                    <a href="about.html">About</a></li>
+                <li>
+                    <a href="concept.html">Concept</a></li>
+                <li>
+                    <a href="product.html">Product</a></li>
+                <li class="dropdown">
+                    <a href="#">Category</a>
+                    <div class="dropdown-ul">
+                        <a href="Category/sky.html">Sky</a>
+                        <a href="Category/road.html">Road</a>
+                        <a href="Category/flower.html">Flower</a>
+                        <a href="Category/river.html">River</a>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <form>
+                        <input type="search" placeholder="KeyWord">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <ul class="flex-rul">
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <small>3</small>
+                    </a>
+                </li>
+                <li>
 
-                        <a class="nav-link px-3" href="signout.jsp"><i class="fa-solid fa-right-from-bracket"></i>Sign
-                            out</a>
+                    <a href="signout.jsp"><i class="fa-solid fa-right-from-bracket"></i>Sign
+                        out</a>
 
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
-        <main>
-            <!-- checkout page -->
-            <!--<div class="container-fluid">-->
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="tittle">
-                            <h3>Checkout</h3>
-                        </div>
-
-                        <div class="">
-                            <div class="">
-                                <div class="form">
-                                    <!-- cart -->
-                                    <div class="container">
+    <main>
+        <!-- checkout page -->
+        <!--<div class="container-fluid">-->
+        <div class="row">
+            <div class="col">
+                <div class="tittle">
+                    <h2>Checkout</h2>
+                </div>
+                <div class="">
+                    <!-- cart -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="">
+                                        <h3>Cart</h3>
+                                    </div>
+                                    <div class="">
                                         <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="card">
-                                                    <div class="card">
-                                                        <h3>Cart</h3>
-                                                    </div>
-                                                    <div class="card">
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <div class="table">
-                                                                    <table class="table table-striped">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Product</th>
-                                                                                <th>Product Name</th>
-                                                                                <th>Price</th>
-                                                                                <th>Quantity</th>
-                                                                                <th>Total</th>
-                                                                                <th>Action</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <img src="Asset/img/aboutus/alter.jpg"
-                                                                                        alt="doggy" class="img">
-                                                                                </td>
-                                                                                <td>DOGGY</td>
-                                                                                <td>$10.00</td>
-                                                                                <td>
-                                                                                    <div class="quantity">
-                                                                                        <div class="">
-                                                                                            <button aria-label="-"
-                                                                                                type="button">
-                                                                                                <i
-                                                                                                    class="fa-solid fa-minus"></i>
-                                                                                            </button>
-                                                                                        </div>
-                                                                                        <input aria-label="cartquanity"
-                                                                                            type="text" value="1">
-                                                                                        <div class="input-group-append">
-                                                                                            <button aria-label="+"
-                                                                                                type="button">
-                                                                                                <i
-                                                                                                    class="fa-solid fa-plus"></i>
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>$10.00</td>
-                                                                                <td>
-                                                                                    <button aria-label="del" "
+                                            <div class="col">
+                                                <div class="table">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Product</th>
+                                                                <th>Product Name</th>
+                                                                <th>Price</th>
+                                                                <th>Quantity</th>
+                                                                <th>Total</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="Asset/img/aboutus/alter.jpg" alt="doggy"
+                                                                        class="img">
+                                                                </td>
+                                                                <td>DOGGY</td>
+                                                                <td>$10.00</td>
+                                                                <td>
+                                                                    <div class="quantity">
+                                                                        <div class="">
+                                                                            <button aria-label="-" type="button">
+                                                                                <i class="fa-solid fa-minus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                        <input aria-label="cartquanity" type="text"
+                                                                            value="1">
+                                                                        <div class="input-group-append">
+                                                                            <button aria-label="+" type="button">
+                                                                                <i class="fa-solid fa-plus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>$10.00</td>
+                                                                <td>
+                                                                    <button aria-label="del" "
                                                                                         type=" button">
-                                                                                        <i
-                                                                                            class="fa-solid fa-trash-alt"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                                        <i class="fa-solid fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form">
-                                    <div class="container">
-                                        <div class="tittle">
-                                            <h3>Shipping Address</h3>
-                                        </div>
-                                        <div class="">
-                                            <form>
-                                                <div class="form-group">
-                                                    <label for="">Full Name</label>
-                                                    <input type="text" class="form-control" placeholder="Full Name">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">Address</label>
-                                                    <input type="text" class="form-control" placeholder="Address">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">Phone Number</label>
-                                                    <input type="text" class="form-control" placeholder="Phone Number">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">Email</label>
-                                                    <input type="text" class="form-control" placeholder="Email">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">City</label>
-                                                    <input type="text" class="form-control" placeholder="City">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">State</label>
-                                                    <input type="text" class="form-control" placeholder="State">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">Zip Code</label>
-                                                    <input type="text" class="form-control" placeholder="Zip Code">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">Country</label>
-                                                    <input type="text" class="form-control" placeholder="Country">
-                                                </div>
-                                                <div class class="form-group">
-                                                    <label for="">Notes</label>
-                                                    <textarea class="form-control" rows="3"
-                                                        placeholder="note"></textarea>
-                                                </div>
-                                                <div class="form-group">
-                                                    <button class="btn" type="submit">Continue</button>
-                                                </div>
-                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -205,10 +140,63 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="">
+                        <div class="tittle">
+                            <h3>Shipping Address</h3>
+                        </div>
+                        <div class="">
+                            <form>
+                                <div class="form-group">
+                                    <label for="">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Full Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Address</label>
+                                    <input type="text" class="form-control" placeholder="Address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">City</label>
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">State</label>
+                                    <input type="text" class="form-control" placeholder="State">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Zip Code</label>
+                                    <input type="text" class="form-control" placeholder="Zip Code">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Country</label>
+                                    <input type="text" class="form-control" placeholder="Country">
+                                </div>
+                                <div class class="form-group">
+                                    <label for="">Notes</label>
+                                    <textarea class="form-control" rows="3" placeholder="note"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn" type="submit">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div>
-    <!--</div>-->
-    </div>
+        </div>
+        </div>
+        </div>
+        <!--</div>-->
+
     </main>
 
     <div class="footer-float"></div>
