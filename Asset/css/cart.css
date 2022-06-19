@@ -1,12 +1,16 @@
-.quantity{
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quantity {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.cart{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.cart {
     padding: 20px;
     margin: 20px auto;
     border: 1px solid #ccc;
@@ -14,21 +18,34 @@
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.btn{
-    display: flex;
+
+.btn {
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     border: 1px solid #ccc;
     margin: 10px;
 }
-.col{
+.btnbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.col {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-  }
-  main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
 }
