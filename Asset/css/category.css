@@ -1,0 +1,31 @@
+.ca-card {
+    background-color:#f1f1f1;
+    border: 1px solid #a1a1a1;
+    padding:5px;
+    width: 300px;
+    margin: 3px;
+    display: inline-block;
+  }
+
+  .ca-pic img {
+    width: 300px;
+    height: auto;
+  }
+  
+.ca-photographer {
+    color:black;
+    text-align: center;
+  }
+  
+.ca-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .cate{
+      background-color: #f1f1f1;
+      width: 1700px;
+      height: auto;
+      margin: 0 auto;
+      padding: 2px;
+  }
