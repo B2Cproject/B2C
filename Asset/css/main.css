@@ -68,11 +68,9 @@ html, body{
 }
 
 *{
-    font-family:
-    monospace;
-=======
-/* main */
+    font-family:monospace;
+}
+
 main {
     background-color: #f1f1f1;
 }
- 
