@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../../Asset/css/main.css">
+    <link rel="stylesheet" href="../../Asset/css/nav.css">
+    <link rel="stylesheet" href="../../Asset/css/productex.css">
+    <title>Product</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-ul">
+                <ul class="flex-ul">
+                    <li> <a class="mark" href="index.html">
+                            <div class="font-mono">ImageStock</div>
+                        </a></li>
+                    <li>
+                        <a href="../../index.html"><div class="font-mono">Home</div></a></li>
+                    <li>
+                        <a href="../../about.html"><div class="font-mono">About</div></a></li>
+                    <li>
+                        <a href="../../concept.html"><div class="font-mono">Concept</div></a></li>
+                    <li>
+                        <a href="../../product.html"><div class="font-mono">Product</div></a></li>
+                    <li class="dropdown">
+                        <a href="#"><div class="font-mono">Category</div></a>
+                        <div class="dropdown-ul">
+                            <a href="../../Category/sky.html"><div class="font-mono">Sky</div></a>
+                            <a href="../../Category/road.html"><div class="font-mono">Road</div></a>
+                            <a href="../../Category/flower.html"><div class="font-mono">Flower</div></a>
+                            <a href="../../Category/river.html"><div class="font-mono">River</div></a>
+                        </div>
+                    </li>
+                </ul>
+                    <ul>
+                    <li>
+                        <form>
+                            <input type="search" placeholder="KeyWord">
+                            <button type="submit"  class="search-button">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="flex-rul">
+                    <li>
+                        <a  href="../../cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="font-mono"><small>3</small></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            <div class="font-mono">Login</div></a></li>
+                    <li>
+                        <a href="../../signup.html"><i class="fa-solid fa-user-plus"></i><div class="font-mono"> Sign
+                            Up</div></a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <main>
+
+        <div class="space-row">
+            <img class="productex-pic-column" src="../../Asset/img/river/river3.jpg" alt="商品展示頁照片"></div>
+                <div class="productex-title">
+                        <h1>RIVER</h1>
+                </div>
+                    <a href="https://www.pexels.com/zh-tw/photo/12133748/" class="black-none">
+                        <div class="photographer">
+                            <p style="font-weight: bold;">@ ___________</p>
+                            <p>A photographer who has powerful and beautiful ardor.</p>
+                        </div>
+                    </a>
+                    <div class="productex-description">
+                         <h2>Product descrption</h2>
+                    </div>
+                
+                    <!--購圖細項-->
+                    <div class="font-mono">
+                    <div class="pex-p-price">
+                        product price
+                    </div>
+
+                    <div class="pex-p-num">
+                        <p>$100</p>
+                    </div>
+
+                    <div class="pex-p-inventory">
+                        product inventory
+                    </div>
+
+                    <div class="pex-p-num">
+                        <p>10</p>
+                    </div>
+
+                    <div class="pex-p-quan">
+                        <p>product quantity</p>
+                    </div>
+
+                    <input aria-label="productquantity" type="number" name="quantity" value="1" min="1" max="10">
+                    <p></p>
+                    
+                    <a href="../../cart.html" class="black-none"><button class="pex-button"><div class="font-mono">_ Add to Cart _</div></button></a>
+                        <a href="../../checkout.html" class="black-none"><button type="submit" class="pex-button"><div class="font-mono">_ Buy Now _</div></button></a>
+                    
+                    <hr width="100%" color="black" >
+
+                <!-- comment board  -->
+                    <div class="font-mono">
+                        <h2 style="margin: 0 50px;">Comment</h2>
+                        <form action="">
+                            <div class="wrapper">
+                            <div class="form-group">
+                                <label for="">Name
+                                    <p></p>
+                                </label>
+                                <input aria-label="commentname" type="text" class="form-control" id="">
+                            </div>
+                            <p></p>
+
+                            <div class="form-group">
+                                <label for="">Email
+                                    <p></p>
+                                </label>
+                                <input aria-label="commentemail" type="email" class="form-control" id="">
+                            </div>
+                            <p></p>
+                            <div class="form-group">
+                                <label for="">Comment
+                                    <p></p>
+                                </label>
+                                <textarea aria-label="comment" name="" id="" cols="70" rows="10"
+                                    class="form-control"></textarea>
+                            </div>
+                            <p></p>
+
+                            <button type="submit" class="pex-button"><div class="font-mono">_ Submit _</div></button>
+                            <button type="reset" class="pex-button"><div class="font-mono">_ Reset _</div></button>
+                    </div>
+                        </form>
+                        <p></p>
+                
+
+                    <hr width="100%" size="2" color="black" border-radius="4px">
+                    
+                    <div class="pex-com">
+                        <h2 style="margin: 20px;">Comment</h2>
+                        <div class="media">
+                            <img src="../../Asset/img/aboutus/alter.jpg" class="mr-3" alt="">
+                            <div class="media-body">
+                                <h5 class="mt-0">Commenter Name</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quasi,
+                                    quisquam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img src="../../Asset/Classification/Animal/hamster.jpg" class="hamster" alt="">
+                            <div class="media-body">
+                                <h5 class="mt-0">Commenter Name</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quasi,
+                                    quisquam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </ul>
+    </main>
+
+    <div class="footer-float"></div> <!--令footer視窗不遮擋內容-->
+    <footer class="footer">
+        <div class="space">
+            <a class="black-none" href="index.html">
+            ImageStock
+            </a>
+             © 2022 ImageStock
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
