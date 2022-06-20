@@ -6,9 +6,10 @@
 }
 
 .ad img {
-    height: 600px;
-    width: auto;
+    height: 300px;
+    width: 1200px;
     object-fit: cover;
+    display: flex;
 }
 
 .ad img2 {
@@ -42,11 +43,13 @@ img {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    margin: 50px;
 }
 
 .main {
     padding: 0 auto;
     margin: 0px 200px;
+    display: block;
 }
 header{
     display: flex;
@@ -55,3 +58,28 @@ header{
     padding: 20px;
     margin: 0 auto;
 }
+
+.side-left img{
+    width: 1200px;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+}
+
+.side-right img{
+    width: 1200px;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+}
+
+.in-button{
+    border: 0px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 300px;
+  }

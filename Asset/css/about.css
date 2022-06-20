@@ -13,7 +13,7 @@
     height: 500px;
     padding: 10px;
     border-radius: 10px;
-    background: linear-gradient(110deg, black, white);
+    background-color: white;
     box-shadow: 0 0 20px 1px Gray;
     float: left;
     margin: 30px;
@@ -22,8 +22,11 @@
 
 .personal-pic{
     overflow: hidden;
-    padding: 10px;
-    margin: -10;
+    padding: 20px;
+    margin: -10px;
+    object-fit: cover;
+    height: 800px;
+    max-width: 100%;
 }
 
 
@@ -31,13 +34,13 @@
     text-align: center;
     font-family:monospace;
     font-weight: bold;
-    color: white;
+    color: black;
     line-height: 3;
     font-size: 25px;
 }
 
 .contant{
-    color: white;
+    color: black;
     font-family:monospace;
     height: 80%;
     width: 100%;
@@ -46,7 +49,7 @@
 
 .link a{
     text-decoration: none;
-    color: white;
+    color: #999595;
     font-size: 250%;
     padding: 10px;
 }

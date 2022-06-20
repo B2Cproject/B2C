@@ -40,10 +40,6 @@ html, body{
     height: 100px; /*footer height*/
 }
 
-.wrapper{
-    min-height: calc(100% - 100px); /*- footer height*/
-}
-
 .space-row{
     padding-left: 30px;
 }
