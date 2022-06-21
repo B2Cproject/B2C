@@ -9,11 +9,7 @@
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
 .btn{
     display: flex;
     justify-content: center;
@@ -33,7 +29,7 @@ main{
 .wrapper {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
 }
 .box1 {
     grid-column-start: 1;
@@ -46,18 +42,15 @@ main{
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 5;
-    grid-template-columns: max-content;
 }
 .box3{
     grid-column-start: 1;
     grid-row-start: 5;
-    grid-row-end: 7;
 }
 .box4{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 5;
-    grid-row-end: 7;
 }
 .h-10{
     height: 10px;

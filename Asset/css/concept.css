@@ -1,8 +1,7 @@
 .concept-container{
     margin: auto;
-    width: 70%;
-    height: 500px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .concept-card1{
