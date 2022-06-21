@@ -24,7 +24,7 @@ ul {
 }
 
 .pill-nav a.active {
-    background-color: dodgerblue;
+    background-color: black;
     color: white;
 }
 
