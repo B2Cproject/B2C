@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    justify-content: center; 
+}
+
+.person{
+    box-sizing: border-box;
+    display: flex; /*照片位置調整*/
+    flex-direction: column; /*卡片位置調整 上到下*/
+    justify-content: center;
+    align-items: center; /*照片調整*/
+    width: 20%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 30px;
+}
+
+
+.personal-pic{
+    overflow: hidden;
+    padding: 20px;
+    margin: -10px;
+    object-fit: cover;
+    height: 800px;
+    max-width: 100%;
+}
+
+
+.person-name{
+    text-align: center;
+    font-family:monospace;
+    font-weight: bold;
+    color: black;
+    line-height: 3;
+    font-size: 25px;
+}
+
+.contant{
+    color: black;
+    font-family:monospace;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    color: #999595;
+    font-size: 250%;
+    padding: 10px;
+}

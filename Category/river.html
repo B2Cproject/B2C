@@ -6,201 +6,258 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../Asset/css/nav.css">
     <link rel="stylesheet" href="../Asset/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Asset/css/category.css">
+    <link rel="stylesheet" href="../Asset/css/productex.css">
     <title>River</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1" href="../index.html">
-                ImageStock
-            </a>
-            <button class="navbar-toggler" aria-label="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">Home</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../about.html">About</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../concept.html">Concept</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../product.html">Product</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Category</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="sky.html">Sky</a>
-                            <a class="dropdown-item" href="road.html">Road</a>
-                            <a class="dropdown-item" href="flower.html">Flower</a>
-                            <a class="dropdown-item" href="river.html">River</a>
+    <a id="top-button" title="top" type="button" href="#nav">Top</a>
+    <nav id="nav" class="nav">
+        <div class="nav-ul">
+                <ul class="flex-ul">
+                    <li> <a class="mark" href="../index.html">
+                            ImageStock
+                        </a></li>
+                    <li>
+                        <a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="../about.html">About</a></li>
+                    <li>
+                        <a href="../concept.html">Concept</a></li>
+                    <li>
+                        <a href="../product.html">Product</a></li>
+                    <li class="dropdown">
+                        <a href="#">Category</a>
+                        <div class="dropdown-ul">
+                            <a href="sky.html">Sky</a>
+                            <a href="road.html">Road</a>
+                            <a href="flower.html">Flower</a>
+                            <a href="river.html">River</a>
                         </div>
                     </li>
+                </ul>
+                    <ul>
                     <li>
-                        <form class="d-flex">
-                            <input type="search" class="form-control me-2" placeholder="KeyWord">
-                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        <form>
+                            <input type="search" placeholder="KeyWord">
+                            <button type="submit"  class="search-button">Search</button>
                         </form>
                     </li>
                 </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a class="btn btn-light" href="../signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <ul class="flex-rul">
+                    <li>
+                        <a  href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <small>3</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
                             Login</a></li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-dark" href="../signup.html"><i class="fa-solid fa-user-plus"></i> Sign
+                    <li>
+                        <a href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign
                             Up</a></li>
                 </ul>
             </div>
-        </div>
     </nav>
 
     <main>
-        <p></p>
-        <div class="tab-pane fade show " id="river">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@kazuend</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/cCthPLHmrzI" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+        <div class="cate">
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river1.jpg" alt="River1">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@jack_anstey</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/HtUBBdNDxpQ" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
+                    <p class="ca-content">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                    </p>
+                    <a href="../productex/river/productex-river1.html" class="cate-button">Find More</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Dave Hoefler</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/hq-UYUC-ZY8" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river2.jpg" alt="River2">
                 </div>
-                <p></p>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@matt__feeney</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/75IV0_EFh0c?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river5.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@knipszimmer</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/yktwU2t1qHA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river2.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river3.jpg" alt="River3">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river6.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Dan Roizer</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/yktwU2t1qHA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
                 </div>
-                <p></p>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river7.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@jgallegos</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/yktwU2t1qHA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river3.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river4.jpg" alt="River4">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river8.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@usualmorals</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/clkI9_xcuis?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river9.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@J V</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/clkI9_xcuis?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river4.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river5.jpg" alt="River5">
                 </div>
-                <p></p>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river10.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@elijahdhiett</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/clkI9_xcuis?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river11.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@sarah Mahmuda</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/QsEJkuxtA4c?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river5.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river6.jpg" alt="River6">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/river/river12.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@mriovisual</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/QsEJkuxtA4c?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
                 </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river6.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river7.jpg" alt="River7">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river7.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river8.jpg" alt="River8">
+                </div>
+                    <div class="ca-photographer">
+                        <h3>
+                            RIVER
+                        </h3>
+                    </div>
+                    <p class="ca-content">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                    </p>
+                    <a href="../productex/river/productex-river8.html" class="cate-button">Find More</a>
+                </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river9.jpg" alt="River9">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river9.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river10.jpg" alt="River10">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river10.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river11.jpg" alt="River11">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        RIVER
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river11.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/river/river12.jpg" alt="River12">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        FLOWER
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/river/productex-river12.html" class="cate-button">Find More</a>
             </div>
         </div>
     </main>
 
-    <footer class="footer m-auto py-3 bg-light">
-        <div class="container">
-            <a class="navbar-brand mt-5 mb-0 text-reset" href="index.html">
-                ImageStock
+    <div class="footer-float"></div> <!--令footer視窗不遮擋內容-->
+    <footer class="footer">
+        <div class="space">
+            <a class="black-none" href="index.html">
+            ImageStock
             </a>
-            <span class="mb-3 text-muted"> © 2022 ImageStock </span>
+             © 2022 ImageStock
         </div>
     </footer>
-
+</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

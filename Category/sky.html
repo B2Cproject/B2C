@@ -6,201 +6,258 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../Asset/css/nav.css">
     <link rel="stylesheet" href="../Asset/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Asset/css/category.css">
+    <link rel="stylesheet" href="../Asset/css/productex.css">
     <title>Sky</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1" href="../index.html">
-                ImageStock
-            </a>
-            <button class="navbar-toggler" aria-label="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">Home</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../about.html">About</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../concept.html">Concept</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../product.html">Product</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Category</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="sky.html">Sky</a>
-                            <a class="dropdown-item" href="road.html">Road</a>
-                            <a class="dropdown-item" href="flower.html">Flower</a>
-                            <a class="dropdown-item" href="river.html">River</a>
+    <a id="top-button" title="top" type="button" href="#nav">Top</a>
+    <nav id="nav" class="nav">
+        <div class="nav-ul">
+                <ul class="flex-ul">
+                    <li> <a class="mark" href="../index.html">
+                            ImageStock
+                        </a></li>
+                    <li>
+                        <a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="../about.html">About</a></li>
+                    <li>
+                        <a href="../concept.html">Concept</a></li>
+                    <li>
+                        <a href="../product.html">Product</a></li>
+                    <li class="dropdown">
+                        <a href="#">Category</a>
+                        <div class="dropdown-ul">
+                            <a href="sky.html">Sky</a>
+                            <a href="road.html">Road</a>
+                            <a href="flower.html">Flower</a>
+                            <a href="river.html">River</a>
                         </div>
                     </li>
+                </ul>
+                    <ul>
                     <li>
-                        <form class="d-flex">
-                            <input type="search" class="form-control me-2" placeholder="KeyWord">
-                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        <form>
+                            <input type="search" placeholder="KeyWord">
+                            <button type="submit"  class="search-button">Search</button>
                         </form>
                     </li>
                 </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a class="btn btn-light" href="../signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <ul class="flex-rul">
+                    <li>
+                        <a  href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <small>3</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
                             Login</a></li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-dark" href="../signup.html"><i class="fa-solid fa-user-plus"></i> Sign
+                    <li>
+                        <a href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign
                             Up</a></li>
                 </ul>
             </div>
-        </div>
     </nav>
 
     <main>
-        <p></p>
-        <div class="tab-pane fade show " id="sky">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@nck</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/8DMuvdp-vso" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+        <div class="cate">
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky1.jpg" alt="Sky1">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@v2osk</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/JE01L3hB0GQ" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
+                    <p class="ca-content">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                    </p>
+                    <a href="../productex/sky/productex-sky1.html" class="cate-button">Find More</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@thebrownspy</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/p0Yupww_SNM" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky2.jpg" alt="Sky2">
                 </div>
-                <p></p>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Szabo Viktor</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/28ZbKOWiZfs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky5.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Dewang Gupta</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/ESEnXckWlLY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky2.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky3.jpg" alt="Sky3">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky6.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@wilstewart3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/T26KCgCPsCI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
                 </div>
-                <p></p>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky7.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Taylor Wilcox</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/wx0Oyo-T_wU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky3.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky4.jpg" alt="Sky4">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky8.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Claudio Poggio</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/KPOkZf-4RnE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky9.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Stacey Gabrielle Koenitz Rozells</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/kSY5T6js2KE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky4.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky5.jpg" alt="Sky5">
                 </div>
-                <p></p>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky10.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@wangbinghua</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/0ubN_9HHILs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky11.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Tom Barrett</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/hgGplX3PFBg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky5.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky6.jpg" alt="Sky6">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../Asset/img/sky/sky12.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">@Daniel Olah</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://unsplash.com/photos/srFhtP2Isv4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="btn btn-primary">Find More</a>
-                        </div>
-                    </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
                 </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky6.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky7.jpg" alt="Sky7">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky7.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky8.jpg" alt="Sky8">
+                </div>
+                    <div class="ca-photographer">
+                        <h3>
+                            SKY
+                        </h3>
+                    </div>
+                    <p class="ca-content">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                    </p>
+                    <a href="../productex/sky/productex-sky8.html" class="cate-button">Find More</a>
+                </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky9.jpg" alt="Sky9">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky9.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky10.jpg" alt="Sky10">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky10.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky11.jpg" alt="Sky11">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky11.html" class="cate-button">Find More</a>
+            </div>
+    
+            <div class="ca-card">
+                <div class="ca-pic">
+                    <img src="../Asset/img/sky/sky12.jpg" alt="Sky12">
+                </div>
+                <div class="ca-photographer">
+                    <h3>
+                        SKY
+                    </h3>
+                </div>
+                <p class="ca-content">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam, corporis soluta maiores ratione fugiat natus dignissimos deleniti architecto, expedita impedit minima mollitia rerum! Ex quam tenetur vel aliquam dolores?</div>
+                </p>
+                <a href="../productex/sky/productex-sky12.html" class="cate-button">Find More</a>
             </div>
         </div>
     </main>
 
-    <footer class="footer m-auto py-3 bg-light">
-        <div class="container">
-            <a class="navbar-brand mt-5 mb-0 text-reset" href="index.html">
-                ImageStock
+    <div class="footer-float"></div> <!--令footer視窗不遮擋內容-->
+    <footer class="footer">
+        <div class="space">
+            <a class="black-none" href="index.html">
+            ImageStock
             </a>
-            <span class="mb-3 text-muted"> © 2022 ImageStock </span>
+             © 2022 ImageStock
         </div>
     </footer>
-
+</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

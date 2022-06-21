@@ -5,72 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="Asset/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="Asset/css/nav.css">
+    <link rel="stylesheet" href="Asset/css/about.css">
+
     <title>About us</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1" href="index.html">
-                ImageStock
-            </a>
-            <button class="navbar-toggler" aria-label="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="concept.html">Concept</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html">Product</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Category</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="Category/sky.html">Sky</a>
-                            <a class="dropdown-item" href="Category/road.html">Road</a>
-                            <a class="dropdown-item" href="Category/flower.html">Flower</a>
-                            <a class="dropdown-item" href="Category/river.html">River</a>
-                        </div>
-                    </li>
-                    <li>
-                        <form class="d-flex">
-                            <input type="search" class="form-control me-2" placeholder="KeyWord">
-                            <button class="btn btn-outline-secondary" type="submit">Search</button>
-                        </form>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a class="btn btn-light" href="signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
-                            Login</a></li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-dark" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign
-                            Up</a></li>
-                </ul>
-            </div>
+    <a id="top-button" title="top" type="button" href="#nav">Top</a>
+    <nav id="nav" class="nav">
+        <div class="nav-ul">
+            <ul class="flex-ul">
+                <li> <a class="mark" href="index.html">
+                        <div class="font-mono">ImageStock</div>
+                    </a></li>
+                <li>
+                    <a href="index.html">
+                        <div class="font-mono">Home</div>
+                    </a></li>
+                <li>
+                    <a href="about.html">
+                        <div class="font-mono">About</div>
+                    </a></li>
+                <li>
+                    <a href="concept.html">
+                        <div class="font-mono">Concept</div>
+                    </a></li>
+                <li>
+                    <a href="product.html">
+                        <div class="font-mono">Product</div>
+                    </a></li>
+                <li class="dropdown">
+                    <a href="#">
+                        <div class="font-mono">Category</div>
+                    </a>
+                    <div class="dropdown-ul">
+                        <a href="Category/sky.html">
+                            <div class="font-mono">Sky</div>
+                        </a>
+                        <a href="Category/road.html">
+                            <div class="font-mono">Road</div>
+                        </a>
+                        <a href="Category/flower.html">
+                            <div class="font-mono">Flower</div>
+                        </a>
+                        <a href="Category/river.html">
+                            <div class="font-mono">River</div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <form>
+                        <input type="search" placeholder="KeyWord">
+                        <button type="submit"  class="search-button">
+                            <div class="font-mono">Search</div>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+            <ul class="flex-rul">
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="font-mono"><small>3</small></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <div class="font-mono">Login</div>
+                    </a></li>
+                <li>
+                    <a href="signup.html"><i class="fa-solid fa-user-plus"></i>
+                        <div class="font-mono"> Sign
+                            Up</div>
+                    </a></li>
+            </ul>
         </div>
     </nav>
 
     <main>
-        <h1 class="p-3">About us</h1>
+
+        <hr width="75%" size="2" color="black">
+        <!--上LINE-->
+        <div class="text-center">
+            <h1 class="font-mono">*.。.。 About us 。.。.*</h1>
+        </div>
+        <hr width="75%" size="2" color="black">
+        <!--下LINE-->
+
         <div class="container">
-            <div class="d-flex align-items-baseline row m-auto border-0">
-                <div class="card about col-md-3 mx-auto border-0">
-                    <img class="flex-shrink-0 mx-auto" src="Asset/img/aboutus/mc.jpg" alt="明琪的照片">
-                    <div class="name text-center">許明琪</div>
-                    <div class="contant text-center">早安，要不要來份原味蛋餅？</div>
-                    <div class="social d-flex justify-content-evenly">
-                        <a class="Secondary" aria-label="fb"
+            <div class="aboutus">
+
+                <div class="person">
+                    <img class="personal-pic" src="Asset/img/aboutus/mc.jpg" alt="明琪的照片">
+                    <div class="person-name">許明琪</div>
+                    <div class="contant">早安，要不要來份原味蛋餅？</div>
+                    <div class="link">
+                        <a class="contact-way" aria-label="fb"
                             href="https://www.facebook.com/profile.php?id=100048048127111"><i
                                 class="fa-brands fa-facebook-square"></i></a>
                         <a aria-label="ig" href="https://www.instagram.com/kocha1021/"><i
@@ -79,37 +114,40 @@
                                 class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="card about col-md-3 mx-auto border-0">
-                    <img class="mx-auto" src="Asset/img/aboutus/Ken.jpg" alt="OO的照片">
-                    <div class="name text-center">王齡寬</div>
-                    <div class="contant text-center">呱
+                <div class="person">
+                    <img class="personal-pic" src="Asset/img/aboutus/Ken.jpg" alt="OO的照片">
+                    <div class="person-name">王齡寬</div>
+                    <div class="contant">呱
                     </div>
-                    <div class="social d-flex justify-content-evenly">
-                        <a aria-label="fb" href="https://www.facebook.com/kuasaxiao064/"><i class="fa-brands fa-facebook-square"></i></a>
-                        <a aria-label="ig" href="https://www.instagram.com/ken0711520/"><i class="fa-brands fa-instagram-square"></i></a>
-                        <a aria-label="mail" href="mailto:ken0711.wang@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="link">
+                        <a class="contact-way" aria-label="fb" href="https://www.facebook.com/kuasaxiao064/"><i
+                                class="fa-brands fa-facebook-square"></i></a>
+                        <a aria-label="ig" href="https://www.instagram.com/ken0711520/"><i
+                                class="fa-brands fa-instagram-square"></i></a>
+                        <a aria-label="mail" href="mailto:ken0711.wang@gmail.com"><i
+                                class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="card about col-md-3 mx-auto border-0">
-                    <img class="mx-auto" src="Asset/img/aboutus/alter.jpg" alt="OO的照片">
-                    <div class="name text-center">OXO</div>
-                    <div class="contant text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                <div class="person">
+                    <img class="personal-pic" src="Asset/img/aboutus/alter.jpg" alt="OO的照片">
+                    <div class="person-name">OXO</div>
+                    <div class="contant">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                         explicabo totam fuga delectus qui incidunt aliquam hic asperiores. Provident quo atque labore
                         aspernatur nesciunt esse enim aliquid hic, voluptatum a.</div>
-                    <div class="social d-flex justify-content-evenly">
-                        <a aria-label="fb" href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    <div class="link">
+                        <a class="contact-way" aria-label="fb" href=""><i class="fa-brands fa-facebook-square"></i></a>
                         <a aria-label="ig" href=""><i class="fa-brands fa-instagram-square"></i></a>
                         <a aria-label="mail" href="mailto:"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="card about col-md-3 mx-auto border-0">
-                    <img class="mx-auto" src="Asset/img/aboutus/alter.jpg" alt="OO的照片">
-                    <div class="name text-center">OXO</div>
-                    <div class="contant text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                <div class="person">
+                    <img class="personal-pic" src="Asset/img/aboutus/alter.jpg" alt="OO的照片">
+                    <div class="person-name">OXO</div>
+                    <div class="contant">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                         explicabo totam fuga delectus qui incidunt aliquam hic asperiores. Provident quo atque labore
                         aspernatur nesciunt esse enim aliquid hic, voluptatum a.</div>
-                    <div class="social d-flex justify-content-evenly">
-                        <a aria-label="fb" href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    <div class="link">
+                        <a class="contact-way" aria-label="fb" href=""><i class="fa-brands fa-facebook-square"></i></a>
                         <a aria-label="ig" href=""><i class="fa-brands fa-instagram-square"></i></a>
                         <a aria-label="mail" href="mailto:"><i class="fa-solid fa-envelope"></i></a>
                     </div>
@@ -118,21 +156,23 @@
         </div>
     </main>
 
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <a class="navbar-brand mt-5 mb-0 text-reset" href="index.html">
+    <div class="footer-float"></div>
+    <!--令footer視窗不遮擋內容-->
+    <footer class="footer">
+        <div class="space">
+            <a class="black-none" href="index.html">
                 ImageStock
             </a>
-            <span class="mb-3 text-muted"> © 2022 ImageStock </span>
+            © 2022 ImageStock
         </div>
     </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
 </body>
 
 </html>

@@ -1,0 +1,67 @@
+.concept-container{
+    margin: auto;
+    width: 70%;
+    height: 500px;
+    display: flex;
+}
+
+.concept-card1{
+    padding: 20px 10px 20px 50px;
+    margin: 10px auto;
+}
+
+.concept-card2{
+    padding: 20px 10px 20px 0px;
+    margin-top: 10px;
+}
+
+
+
+.concept-card1 img{
+    width: 300px;
+    height: auto;
+    margin: 0 0 5px 30px;
+}
+
+.concept-card2 img{
+    width: 300px;
+    height: auto;
+    margin: 0 0 5px 30px;
+}
+
+
+.c-card-content1{
+    padding: 20px 0 0 0;
+    width: 200px;
+    height: 250px;
+    color: black;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.c-card-content2{
+    padding: 20px 0 0 0;
+    width: 200px;
+    height: 250px;
+    color: black;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.c-photographer{
+    font-weight: bold;
+}
+
+.con-button{
+    border: 0px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: black;
+    color: white;
+    display: inline;
+
+}

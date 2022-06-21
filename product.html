@@ -7,351 +7,314 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="Asset/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Asset/css/nav.css">
+    <link rel="stylesheet" href="Asset/css/product.css">
+    <link rel="stylesheet" href="Asset/css/category.css">
     <title>Product</title>
 </head>
 
-<body class="h-100">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1" href="../index.html">
-                ImageStock
-            </a>
-            <button class="navbar-toggler" aria-label="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="concept.html">Concept</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html">Product</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Category</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="Category/sky.html">Sky</a>
-                            <a class="dropdown-item" href="Category/road.html">Road</a>
-                            <a class="dropdown-item" href="Category/flower.html">Flower</a>
-                            <a class="dropdown-item" href="Category/river.html">River</a>
-                        </div>
-                    </li>
-                    <li>
-                        <form class="d-flex">
-                            <input type="search" class="form-control me-2" placeholder="KeyWord">
-                            <button class="btn btn-outline-secondary" type="submit">Search</button>
-                        </form>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a class="btn btn-light" href="../signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
-                            Login</a></li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-dark" href="../signup.html"><i class="fa-solid fa-user-plus"></i> Sign
-                            Up</a></li>
-                </ul>
-            </div>
+<body>
+    <a id="top-button" title="top" type="button" href="#nav">Top</a>
+    <nav id="nav" class="nav">
+        <div class="nav-ul">
+            <ul class="flex-ul">
+                <li> <a class="mark" href="index.html">
+                        ImageStock
+                    </a></li>
+                <li>
+                    <a href="index.html">Home</a></li>
+                <li>
+                    <a href="about.html">About</a></li>
+                <li>
+                    <a href="concept.html">Concept</a></li>
+                <li>
+                    <a href="product.html">Product</a></li>
+                <li class="dropdown">
+                    <a href="#">Category</a>
+                    <div class="dropdown-ul">
+                        <a href="Category/sky.html">Sky</a>
+                        <a href="Category/road.html">Road</a>
+                        <a href="Category/flower.html">Flower</a>
+                        <a href="Category/river.html">River</a>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <form>
+                        <input type="search" placeholder="KeyWord">
+                        <button type="submit"  class="search-button">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <ul class="flex-rul">
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <small>3</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        Login</a></li>
+                <li>
+                    <a href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign
+                        Up</a></li>
+            </ul>
         </div>
     </nav>
-
-    <!-- <ul class="nav nav-pills nav-fill">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">－CATEGORY－</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="Category/sky.html">
-                <img src="Asset/img/sky/skyicon.JPG"> - SKY -
-                <img src="Asset/img/sky/skyicon.JPG">
-            </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Category/road.html">
-            <img src="Asset/img/road/roadicon.JPG"> - ROAD -
-            <img src="Asset/img/road/roadicon.JPG">
-        </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Category/river.html">
-            <img src="Asset/img/river/rivericon.JPG">  - RIVER -
-            <img src="Asset/img/river/rivericon.JPG">
-            </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Category/flower.html" tabindex="-1" aria-disabled="true">
-            <img src="Asset/img/flower/flowericon.JPG">  - FLOWER -
-            <img src="Asset/img/flower/flowericon.JPG">
-        </a>
-      </ul> -->
-
-    <main class="h-100">
-        <h1 class="p-3">Product</h1>
-<!-- category nav-pill -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <ul class="nav nav-pills flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#animal" data-bs-toggle="pill">Animal</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sky" data-bs-toggle="pill">Sky</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#road" data-bs-toggle="pill">Road</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#flower" data-bs-toggle="pill">Flower</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#river" data-bs-toggle="pill">River</a></li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#human" data-bs-toggle="pill">Human</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-9">
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="animal">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/Classification/Animal/duck_1.JPG" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.</p>
-                                           
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/Classification/Animal/duck_2.JPG" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This card has supporting text below as a natural
-                                                lead-in to additional content.</p>
-                                           
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/Classification/Animal/duck_3.JPG" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. </p>
-                                           
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <main>
+        <a id="top"></a>
+        <!-- category nav-pill -->
+        <div class="wrapper">
+            <div class="box">
+                <h1>Product</h1>
+            </div>
+            <div class="box1">
+                <ul class="pill-nav">
+                    <li>
+                        <a class="active" href="#animal">Animal</a></li>
+                    <li>
+                        <a class="" href="#sky">Sky</a></li>
+                    <li>
+                        <a class="" href="#road">Road</a></li>
+                    <li>
+                        <a class="" href="#flower">Flower</a></li>
+                    <li>
+                        <a class="" href="#river">River</a></li>
+                    <li>
+                        <a class="" href="#human">Human</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <div class="box3" id="animal">
+                    <div class="card">
+                        <img class="img" src="Asset/Classification/Animal/duck_1.jpg"
+                            alt="Duck1">
+                        <div class="card-body">
+                            <h5 class="card-title">DUCK</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
                         </div>
-
-                        <div class="tab-pane fade show " id="sky">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/sky/sky1.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@nck</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/8DMuvdp-vso" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/sky/sky2.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@v2osk</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/JE01L3hB0GQ" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/sky/sky3.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@thebrownspy</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/p0Yupww_SNM" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="Asset/Classification/Animal/duck_2.jpg"
+                            alt="Duck2">
+                        <div class="card-body">
+                            <h5 class="card-title">DUCK</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corporis sint temporibus soluta dolores quos officiis doloribus laudantium numquam neque explicabo, ducimus aliquam. Earum esse perspiciatis illo labore debitis vel?</div>
+                            </p>
                         </div>
-
-                        <div class="tab-pane fade show " id="road">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/road/road1.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@Anthony Reungère</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/s6xt1mwF_iU" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/road/road2.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@Holden Baxter</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/oxQ0egaQMfU" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/road/road3.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@knopka</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/jocViE_c8R0" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade show " id="flower">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/flower/flower1.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@Magda Lukas</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/OZhYgZh0bAg" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/flower/flower2.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@gaspanik</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/NoXUQ54pDac" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/flower/flower3.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@anniespratt</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/hX_hf2lPpUU" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade show " id="river">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/river/river1.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@kazuend</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/cCthPLHmrzI" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/river/river2.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@jack_anstey</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/HtUBBdNDxpQ" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/river/river3.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@Dave Hoefler</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="https://unsplash.com/photos/hq-UYUC-ZY8" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="human">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/human/human1.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@Andriyko Podilnyk</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.</p>
-                                            <a href="https://unsplash.com/photos/hq-UYUC-ZY8" class="btn btn-primary">Go somewhere</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/human/human2.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@Houcine Ncib</h5>
-                                            <p class="card-text">This card has supporting text below as a natural
-                                                lead-in to additional content.</p>
-                                            <a href="https://unsplash.com/photos/hq-UYUC-ZY8" class="btn btn-primary">Go somewhere</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="Asset/img/human/human3.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">@Jeffery Erhunse</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. </p>
-                                            <a href="https://unsplash.com/photos/hq-UYUC-ZY8" class="btn btn-primary">Go somewhere</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="Asset/Classification/Animal/duck_3.jpg"
+                            alt="Duck3">
+                        <div class="card-body">
+                            <h5 class="card-title">DUCK</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quas! Numquam, consequuntur voluptatum id nobis, eaque, nihil quisquam exercitationem molestias repudiandae reprehenderit qui consectetur minima temporibus maiores dolorem? Quisquam, ducimus!</div>
+                            </p>
                         </div>
                     </div>
                 </div>
 
+                <div class="box3" id="sky">
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/sky/sky1.jpg" alt="Sky1">
+                        <div class="card-body">
+                            <h5 class="card-title">@nck</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/sky/productex-sky1.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/sky/sky2.jpg" alt="Sky2">
+                        <div class="card-body">
+                            <h5 class="card-title">@v2osk</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/sky/productex-sky2.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/sky/sky3.jpg" alt="Sky3">
+                        <div class="card-body">
+                            <h5 class="card-title">@thebrownspy</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/sky/productex-sky3.htm" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="box3" id="road">
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/road/road1.jpg" alt="Road1">
+                        <div class="card-body">
+                            <h5 class="card-title">@Anthony Reungère</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/road/productex-road1.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/road/road2.jpg" alt="Road2">
+                        <div class="card-body">
+                            <h5 class="card-title">@Holden Baxter</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/road/productex-road2.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/road/road3.jpg" alt="Road3">
+                        <div class="card-body">
+                            <h5 class="card-title">@knopka</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/road/productex-road3.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box3" id="flower">
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/flower/flower1.jpg" alt="Flower1">
+                        <div class="card-body">
+                            <h5 class="card-title">@Magda Lukas</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/flower/productex-flower1.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/flower/flower2.jpg" alt="Flower2">
+                        <div class="card-body">
+                            <h5 class="card-title">@gaspanik</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/flower/productex-flower2.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/flower/flower3.jpg" alt="Flower3">
+                        <div class="card-body">
+                            <h5 class="card-title">@anniespratt</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/flower/productex-flower3.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box3" id="river">
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/river/river1.jpg" alt="River1">
+                        <div class="card-body">
+                            <h5 class="card-title">@kazuend</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/river/productex-river1.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/river/river2.jpg" alt="River2">
+                        <div class="card-body">
+                            <h5 class="card-title">@jack_anstey</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/river/productex-river2.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Asset/img/river/river3.jpg" alt="River3">
+                        <div class="card-body">
+                            <h5 class="card-title">@Dave Hoefler</h5>
+                            <p class="card-text">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                            </p>
+                            <a href="productex/river/productex-river3.html" class="cate-button">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box3" id="human">
+                            <div class="card">
+                                <img class="img" src="Asset/img/human/human1.jpg" alt="Human1">
+                                <div class="card-body">
+                                    <h5 class="card-title">@Andriyko Podilnyk</h5>
+                                    <p class="card-text">
+                                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                                    </p>
+                                    <a href="productex/human/productex-human1.html" class="cate-button">Go
+                                        somewhere</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="img" src="Asset/img/human/human2.jpg" alt="Human2">
+                                <div class="card-body">
+                                    <h5 class="card-title">@Houcine Ncib</h5>
+                                    <p class="card-text">
+                                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                                    </p>
+                                    <a href="productex/human/productex-human2.html" class="cate-button">Go
+                                        somewhere</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="img" src="Asset/img/human/human3.jpg" alt="Human3">
+                                <div class="card-body">
+                                    <h5 class="card-title">@Jeffery Erhunse</h5>
+                                    <p class="card-text">
+                                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, asperiores officia! Amet, saepe libero aliquam minus quisquam iure adipisci ducimus iusto odit! Fuga magnam error reprehenderit, corporis nesciunt voluptatum! Dicta.</div>
+                                    </p>
+                                    <a href="productex/human/productex-human3.html" class="cate-button">Go
+                                        somewhere</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
             </div>
         </div>
-
     </main>
 
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <a class="navbar-brand mt-5 mb-0 text-reset" href="index.html">
+    <div class="footer-float"></div>
+    <!--令footer視窗不遮擋內容-->
+    <footer class="footer">
+        <div class="space">
+            <a class="black-none" href="index.html">
                 ImageStock
             </a>
-            <span class="mb-3 text-muted"> © 2022 ImageStock </span>
+            © 2022 ImageStock
         </div>
     </footer>
 
