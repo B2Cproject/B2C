@@ -14,7 +14,7 @@
 }
 
 .pill-nav a.active {
-  background-color: dodgerblue;
+  background-color: black;
   color: white;
 }
 ul{
@@ -151,4 +151,24 @@ table{
   margin: 10px;
   width: 100%;
   height: 100%;
+}
+
+.user-button{
+  border: 0px;
+  height: 20px;
+  border-radius: 5%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 300px;
+}
+
+.user-button2{
+  border: 0px;
+  height: 20px;
+  border-radius: 5%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 50px;
 }
