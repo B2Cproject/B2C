@@ -1,13 +1,14 @@
+/* row排下去 */
 main {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
+/* 側邊取消樣式 */
 ul {
     list-style: none;
 }
-
+/* 參考w3s */
 .pill-nav a {
     display: inline-block;
     color: black;
@@ -22,43 +23,44 @@ ul {
     background-color: #ddd;
     color: black;
 }
-
+/* 更改顏色符合主題 */
 .pill-nav a.active {
     background-color: black;
     color: white;
 }
-
+/* 查原本bs5留下的wrapper */
 .wrapper {
     display: grid;
     grid-gap: 1em;
     grid-template-columns:repeat(auto-fit, 1fr);
 }
-
+/* tittle */
 .box {
     grid-column-start: 2;
     grid-column-end: 6;
 }
-
+/* 側邊欄 第二條線起 但好像寫錯ㄌ*/
 .box1 {
     display: grid;
     grid-column-start: 2;
 }
-
+/* col 第三條線-第六條 */
 .box2 {
     grid-column-start: 3;
     grid-column-end: 6;
 }
-
+/* grid-item 裡面分三列出來 */
 .box3 {
     display: grid;
     grid-gap: 1em;
     grid-template-columns:repeat(3, 1fr);
 }
+/* 後來找到如何fit圖片 */
 .box3 img{
     width: 100%;
     height: auto;
 }
-
+/* card同w3s */
 .card {
     padding: 20px;
     margin: 10px auto;
@@ -67,11 +69,13 @@ ul {
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+/* row */
 .row{
     display: flex;
     flex-direction: row;
     justify-content: space-between
 }
+/* 自行設定card tittle 商品名稱 */
 .card-title{
     padding-top: 5px;
     font-size: 18px;

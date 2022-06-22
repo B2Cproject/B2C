@@ -1,15 +1,16 @@
+/* 自己設的 */
 main {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
+/* 自己設的 */
 .quantity {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+/* 參考w3c card */
 .cart {
     padding: 20px;
     margin: 20px auto;
@@ -18,7 +19,7 @@ main {
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-
+/* 當初btn都是自己設的綠色為了登入 */
 .btn {
     /* display: flex; */
     justify-content: center;
@@ -39,11 +40,13 @@ main {
     justify-content: center;
     height: 100%;
 }
+/* 參考教程後自己寫要幾col */
 .wrapper {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: repeat(3, 1fr);
 }
+/* tittle */
 .box1 {
     grid-column-start: 1;
     grid-column-end: 4;

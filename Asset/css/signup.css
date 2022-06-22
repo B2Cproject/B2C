@@ -1,26 +1,31 @@
+/* 從signin複製的 */
 main {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+/* row 原本要丟進main.css 但有些要center有些免*/
 .row{
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 100%;
 }
+/* col 同上*/
 .col{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
   }
+  /* btn同之前 */
 .btn{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
 }
+/* 同signin */
 .form{
     background-color: #ffffff;
     display: flex;

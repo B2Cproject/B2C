@@ -1,10 +1,11 @@
+/* 參考教程 用html與css製作簡單導覽列 */
 nav {
     display: flex;
     padding: 0 auto;
     margin: 0 auto;
     border-bottom: 1px solid black;
 }
-
+/* nowrap bs5學來的 */
 a {
     white-space: nowrap;
     display: inline-block;
@@ -24,14 +25,12 @@ nav a:hover {
     background-color: #f1f1f1;
 }
 
-
-
 .flex-ul {
     display: flex;
     justify-content: left;
     align-items: center;
 }
-
+/* 想靠最右 但後來都置中 */
 .flex-rul {
     display: flex;
     justify-content: right;
@@ -44,13 +43,13 @@ nav a:hover {
     padding: 0 auto;
     margin: 0 auto;
 }
-
-/* drop down */
+/* 參考教程 網路上找的 */
+/* drop down position連接*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
+/* 下拉選單必須position固定 */
 .dropdown-ul {
     position: absolute;
     display: none;
@@ -58,7 +57,7 @@ nav a:hover {
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-
+/* block整區塊可選 */
 .dropdown-ul a {
     display: block;
 }
@@ -66,12 +65,12 @@ nav a:hover {
 .dropdown:hover .dropdown-ul {
     display: block;
 }
-
+/* 背景 */
 .dropdown:hover li {
     display: block;
     background-color: #f1f1f1;
 }
-
+/* 一開始的LOGO先預設 */
 .mark {
     font: bold 24px Arial;
 }

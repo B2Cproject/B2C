@@ -16,28 +16,28 @@
     height: 700px;
     object-fit: cover;
 }
-
+/* 參考教程自己設 */
 .between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+/* 參考教程沒反轉沒用到 */
 .between reverse {
     flex-direction: colume-reverse;
 }
-
+/* 測試object屬性 */
 img {
     object-fit: contain;
 }
-
+/* 當初配合signin搬過來的 */
 .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 100%;
 }
-
+/* 同上 margin好像是一開始用ad我想用position但圖片會遮到*/
 .col {
     display: flex;
     flex-direction: column;
@@ -45,12 +45,13 @@ img {
     height: 100%;
     margin: 50px;
 }
-
+/* .main 用ad一開始圖片限制大小的後來留下來了*/
 .main {
     padding: 0 auto;
     margin: 0px 200px;
     display: block;
 }
+/* 圖片置中 */
 header{
     display: flex;
     justify-content: center;
