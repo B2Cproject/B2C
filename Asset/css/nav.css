@@ -1,11 +1,11 @@
-/* 參考教程 用html與css製作簡單導覽列 */
+/* 參考教程 */
 nav {
     display: flex;
     padding: 0 auto;
     margin: 0 auto;
     border-bottom: 1px solid black;
 }
-/* nowrap bs5學來的 */
+
 a {
     white-space: nowrap;
     display: inline-block;
@@ -43,7 +43,6 @@ nav a:hover {
     padding: 0 auto;
     margin: 0 auto;
 }
-/* 參考教程 網路上找的 */
 /* drop down position連接*/
 .dropdown {
     position: relative;

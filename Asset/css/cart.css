@@ -10,7 +10,7 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-/* 參考w3c card */
+/* 參考w3s card */
 .cart {
     padding: 20px;
     margin: 20px auto;
@@ -40,7 +40,7 @@ main {
     justify-content: center;
     height: 100%;
 }
-/* 參考教程後自己寫要幾col */
+/* 自己寫要幾col */
 .wrapper {
     display: grid;
     grid-gap: 1em;

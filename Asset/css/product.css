@@ -8,7 +8,7 @@ main {
 ul {
     list-style: none;
 }
-/* 參考w3s */
+/* 參考w3s pill-nav */
 .pill-nav a {
     display: inline-block;
     color: black;
@@ -23,12 +23,12 @@ ul {
     background-color: #ddd;
     color: black;
 }
-/* 更改顏色符合主題 */
+/* 更改背景顏色符合主題 */
 .pill-nav a.active {
     background-color: black;
     color: white;
 }
-/* 查原本bs5留下的wrapper */
+/* 查grid */
 .wrapper {
     display: grid;
     grid-gap: 1em;
@@ -39,15 +39,19 @@ ul {
     grid-column-start: 2;
     grid-column-end: 6;
 }
-/* 側邊欄 第二條線起 但好像寫錯ㄌ*/
+/* 側邊欄 第二條線起 寫錯 */
 .box1 {
     display: grid;
     grid-column-start: 2;
 }
 /* col 第三條線-第六條 */
 .box2 {
-    grid-column-start: 3;
-    grid-column-end: 6;
+    grid-column-start:3;
+    /* grid-column-end: 6; */
+}
+
+.box2 {
+    margin-left: 3;
 }
 /* grid-item 裡面分三列出來 */
 .box3 {
@@ -60,7 +64,6 @@ ul {
     width: 100%;
     height: auto;
 }
-/* card同w3s */
 .card {
     padding: 20px;
     margin: 10px auto;
