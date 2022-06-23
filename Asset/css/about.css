@@ -1,14 +1,14 @@
 .container{
     display: flex;
-    justify-content: center; 
+    justify-content: center; /*依主軸方向對齊*/
 }
 
 .person{
-    box-sizing: border-box;
+    box-sizing: border-box; /*設定寬高作用於哪個箱子 寬高設定作用在邊框外緣的範圍內*/
     display: flex; /*照片位置調整*/
-    flex-direction: column; /*卡片位置調整 上到下*/
-    justify-content: center;
-    align-items: center; /*照片調整*/
+    flex-direction: column; /*display:flex屬性用法 https://www.casper.tw/css/2017/07/21/css-flex/*/
+    justify-content: center;/*依主軸方向對齊*/
+    align-items: center; /*內物件對齊 和justify-content: center;相反 用交錯軸線來排版 https://w3c.hexschool.com/flexbox/87d66dc4*/
     width: 20%;
     height: 500px;
     padding: 10px;
@@ -21,10 +21,10 @@
 
 
 .personal-pic{
-    overflow: hidden;
+    overflow: hidden; /*隱藏超出範圍的內容*/
     padding: 20px;
     margin: -10px;
-    object-fit: cover;
+    object-fit: cover; /*填滿元素的寬度及高度(維持原比例)，通常會剪掉部分的物件。*/
     height: 800px;
     max-width: 100%;
 }
@@ -35,7 +35,7 @@
     font-family:monospace;
     font-weight: bold;
     color: black;
-    line-height: 3;
+    line-height: 3; /*行高*/
     font-size: 25px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .link a{
-    text-decoration: none;
+    text-decoration: none; /*預設值，無額外文字特效*/
     color: #999595;
     font-size: 250%;
     padding: 10px;
